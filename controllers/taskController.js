@@ -24,7 +24,6 @@ exports.createTask = async (req, res) => {
             deadline,
             user: req.user._id,
         });
-        console.log(task);
         await task.save();
         res.status(201).json(task);
     } catch (error) {
