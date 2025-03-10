@@ -17,10 +17,7 @@ app.use(express.json());
 // Allow all origins
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://trello-frontend-one.vercel.app",
-    ],
+    origin: ["http://localhost:3000", "https://rello-app.vercel.app"],
   })
 );
 
